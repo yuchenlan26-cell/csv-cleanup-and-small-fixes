@@ -1,0 +1,30 @@
+name: Small paid customization / 小额定制需求
+description: Discuss one small script change and agree on scope before work.
+title: "[Job request] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use invented samples only. This form does not place or accept an order. 请勿提交客户隐私或收款信息。"
+  - type: textarea
+    id: task
+    attributes:
+      label: What should change? / 需要修改什么？
+      description: Include a small invented input and the exact expected output.
+    validations:
+      required: true
+  - type: input
+    id: budget
+    attributes:
+      label: Budget and currency / 预算与币种
+      placeholder: "e.g. CNY 30 for one agreed rule"
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Preferred deadline / 期望期限
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance checks / 验收条件
+      description: Describe how you will check the delivered output.
